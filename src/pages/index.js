@@ -48,6 +48,8 @@ export default function Home() {
     }
 
     setIsLoading(true);
+
+    //over here going into the other file to make the api call
     axios.post(url,data).then((response) => {
     console.log(response)
 
@@ -64,8 +66,11 @@ export default function Home() {
 
 
   return (
-    <div className='container mx-auto max-w- 700'>
-      <div className='flex flex-col h-screen bg-gray-900'>
+    //taking out the styling because it's breaking the app
+    //className='container mx-auto max-w-[700px]'>
+    <div>
+      {/*  className='flex flex-col h-screen bg-gray-900' */}
+      <div>
     <h1 className='bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-center py-3 font-bold text-6xl'>
       Chat with A.I
     </h1>
@@ -113,7 +118,7 @@ export default function Home() {
       placeholder='Please type your message here...' value={inputValue} onChange={(e)=>setInputValue(e.target.value)} />
 
 
-      <button type='submit' className='bg-purple-500 rounded-lg px-4 py-2 text-white font-semibold focus:outline-none hover:bg-purple-600 transition-colors duration-300'
+      <button type='submit' className='bg-purple-500 rounded-lg px-4 py-2 text-white font-semibold focus:outline-none hover:bg-purple-600 transition-colors duration-300 ml-2'
       >Send</button>
       </div>
     </form>
