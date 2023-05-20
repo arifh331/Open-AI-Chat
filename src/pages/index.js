@@ -66,11 +66,13 @@ export default function Home() {
 
 
   return (
-    //taking out the styling because it's breaking the app
+    ////container div for the entire chat 
     //className='container mx-auto max-w-[700px]'>
-    <div>
+    <div className='container mx-auto max-w-[700px]'>
+
+
       {/*  className='flex flex-col h-screen bg-gray-900' */}
-      <div>
+      <div className='flex flex-col h-screen bg-gray-900'>
     <h1 className='bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-center py-3 font-bold text-6xl'>
       Chat with A.I
     </h1>
