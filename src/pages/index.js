@@ -1,12 +1,14 @@
 import Image from 'next/image'
 //import styles from './page.module.css'
-import {useState, useEffect} from 'react'
+import {useState, useEffect,useRef} from 'react'
 
 //axios to make the api call
 import axios from 'axios'
 import TypingAnimation from '@/components/TypingAnimation';
 
 export default function Home() {
+  //I am going to use this to scroll to the bottom of the chat
+  const chatContainerRef = useRef(null);
 
   //THis is the user input value
   const [inputValue,setInputValue] = useState('');
@@ -17,6 +19,11 @@ export default function Home() {
   
   //Waiting for api response
   const [isLoading, setIsLoading] = useState(false)
+
+  //This is the useEffect hook to scroll to the bottom of the chat
+  useEffect(() => {
+    chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+  }, [chatLog]);
 
   //function to handle when the user submits a message 
   const handleSubmit = (event)=>{
@@ -79,8 +86,8 @@ export default function Home() {
       Chat with A.I
     </h1>
 
-    <div className='flex-grow p-6 overflow-y-auto'>
-      <div className='flex flex-col space-y-4'>
+    <div className='flex-grow p-6 overflow-y-auto' ref={chatContainerRef}>
+      <div  className='flex flex-col space-y-4'>
 
       { 
       //This is the chatlog and we are displaying all the messages one after the other
