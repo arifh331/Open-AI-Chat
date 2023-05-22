@@ -31,7 +31,7 @@ Feel free to try it out and engage in a conversation with GPT-4. Ask your questi
 
 5. Start the development server: npm run dev
 
-6. 6. Open your browser and visit `http://localhost:3000` to see the chat application in action.
+6. Open your browser and visit `http://localhost:3000` to see the chat application in action.
 
 ## Usage
 
