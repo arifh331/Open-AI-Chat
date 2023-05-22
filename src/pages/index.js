@@ -79,7 +79,7 @@ export default function Home() {
       Chat with A.I
     </h1>
 
-    <div className='flex-grow p-6'>
+    <div className='flex-grow p-6 overflow-y-auto'>
       <div className='flex flex-col space-y-4'>
 
       { 
@@ -87,7 +87,7 @@ export default function Home() {
       chatLog.map((message,index)=>(
 
         //div for the chat bubbles and where they would be placed if they are user or ai
-        <div key='index' className={`flex ${message.type === 'user' ? 'justify-end': 'justify-start'}`}>
+      <div key={index} className={`flex ${message.type === 'user' ? 'justify-end': 'justify-start'}`}>
 
           {/* This the div deciding the actual messages inside the chat, their styles depending on if their user or AI  */}
           <div className={`${message.type === 'user' ? 'bg-blue-700' : 'bg-red-400'} rounded-lg p-4 text-white max-w-sm`}> 
