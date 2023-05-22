@@ -1,6 +1,8 @@
 import Image from 'next/image'
 //import styles from './page.module.css'
 import {useState, useEffect} from 'react'
+
+//axios to make the api call
 import axios from 'axios'
 import TypingAnimation from '@/components/TypingAnimation';
 

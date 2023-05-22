@@ -1,3 +1,7 @@
+/* I am using tailwind css for my global styles, base styles provided by tailwind css, pre-built components designed by tailwind cs
+are available but really in this project I am using the utility classes to add quick styles to my elements such as margin, color
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
