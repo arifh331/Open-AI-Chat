@@ -122,7 +122,7 @@ export default function Home() {
     
 
     <form onSubmit={handleSubmit} className='flex-none p-6'>
-      <div className='flex rounded-lg border border-gray-700 bg-gray-800'>
+      <div className='flex rounded-lg border border-gray-350 bg-gray-800'>
 
       
       <input type='text' className='flex-grow px-4 py-2 bg-transparent text-white focus:outline:none' 

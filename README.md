@@ -43,7 +43,9 @@ Enjoy exploring the capabilities of this advanced AI system!
 
 ## Try it Out!
 
-Try it out for yourself in this deployed version: [Live Demo](https://your-chat-with-ai-demo.com)
+Try it out for yourself in this deployed version: [Live Demo](https://chatwithainow.netlify.app/)
+
+## If you have any questions please contact me at ah3288@nyu.edu
 
 ## Credits
 
